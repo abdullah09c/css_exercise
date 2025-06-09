@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 6</title>
+    <style>
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+      li{
+        display: inline-block;
+        padding: 5px;
+        margin: 2px;
+        position: relative;
+      }
+      li::before{
+        content: '';
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        top:0;
+        left: 0;
+        background-color: orange;
+        transform: scale(0);
+        transition: transform 0.5s ease-in-out;
+      }
+      li:hover::before{
+        transform: scale(1);
+      }
+    </style>
+  </head>
+  <body>
+    <b>Preview:</b>
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+  </body>
+</html>
