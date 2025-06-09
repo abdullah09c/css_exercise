@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 18</title>
+    <style>
+      .box p {
+        color: #999999;
+        display: inline-block;
+        background: #cccccc;
+        margin: 0;
+        position: relative;
+        padding: 7px;
+        border-radius: 3px 0 0 3px;
+        border: 1px solid #cccccc;
+      }
+      .box input {
+        display: inline-block;
+        width: 14vw;
+        margin: 0;
+        position: absolute;
+        padding: 8px;
+        box-sizing: border-box;
+        border: 1px solid #999;
+        border-radius: 0 3px 3px 0;
+        border-left: none;
+        /* left: auto; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <p>+20</p>
+      <input
+        type="tel"
+        name="num"
+        id="num"
+        placeholder="254 254 1111"
+        disabled
+      />
+    </div>
+  </body>
+</html>
