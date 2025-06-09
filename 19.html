@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 19</title>
+    <style>
+      label {
+        display: inline-block;
+        width: 15vw;
+      }
+      input {
+        margin: 1em;
+        /* margin-left: ; */
+      }
+      input:focus {
+        outline-color: darkblue;
+      }
+      fieldset:focus-within{
+        background-color: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#" method="post">
+      <fieldset>
+        <label for="user">Username:</label>
+        <input type="text" name="user" id="user" />
+        <br />
+        <label for="pass">Password:</label>
+        <input type="password" name="pass" id="pass" />
+      </fieldset>
+    </form>
+  </body>
+</html>
