@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 15</title>
+    <style>
+      .box {
+        display: inline-block;
+        color: #3bafea;
+        position: relative;
+        overflow: hidden;
+        /* border: 3px solid #000; */
+      }
+      .box::before {
+        content: "";
+        background: #3bafea;
+        position: absolute;
+        width: 100%;
+        height: 10%;
+        bottom: 0;
+        left: 0;
+        transform-origin: bottom right;
+        transform: scaleX(0);
+        transition: transform 0.5s ease;
+      }
+      .box:hover::before {
+        transform-origin: bottom left;
+        transform: scaleX(1);
+      }
+    </style>
+  </head>
+  <body>
+    <p class="box">Hover w3resource text to see the effect!</p>
+  </body>
+</html>
